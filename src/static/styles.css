@@ -58,20 +58,111 @@ section h3 {
 }
 
 .activity-card {
-  margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 1px solid #e0e4f2;
+  border-left: 4px solid #3949ab;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #fff 0%, #f8f9ff 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(26, 35, 126, 0.13);
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 1.15rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-card .activity-meta {
+  color: #555d75;
+  font-size: 0.94rem;
+}
+
+.activity-participants {
+  margin-top: 16px;
+  padding: 13px 15px;
+  border-radius: 7px;
+  background-color: #eef0fb;
+}
+
+.activity-participants h5 {
+  margin-bottom: 7px;
+  color: #283593;
+  font-size: 0.95rem;
+}
+
+.activity-participants ul {
+  padding: 0;
+  color: #414761;
+  list-style: none;
+}
+
+.activity-participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(40, 53, 147, 0.1);
+}
+
+.activity-participants li:last-child {
+  border-bottom: 0;
+}
+
+.activity-participants li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.unregister-button {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  padding: 6px;
+  border-radius: 6px;
+  background: transparent;
+  color: #b3261e;
+}
+
+.unregister-button:hover {
+  background: #ffebee;
+  color: #8c1d18;
+}
+
+.unregister-button:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.unregister-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.unregister-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.activity-participants .participants-empty {
+  margin: 0;
+  color: #6b7185;
+  font-size: 0.92rem;
+  font-style: italic;
 }
 
 .form-group {
